@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Recommandation de Films</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Système de Recommandation de Films</h1>
+        
+        <div class="search-form">
+            <form method="POST" action="{{ url_for('recommend') }}">
+                <div class="form-group">
+                    <label for="movie">Entrez le titre d'un film :</label>
+                    <input type="text" id="movie" name="movie" required 
+                           placeholder="Ex: Inception, The Matrix...">
+                </div>
+                
+                <div class="form-group">
+                    <label for="user_id">ID Utilisateur (optionnel) :</label>
+                    <input type="number" id="user_id" name="user_id" 
+                           placeholder="Pour les recommandations personnalisées">
+                </div>
+                
+                <button type="submit">Obtenir des recommandations</button>
+            </form>
+        </div>
+        
+        <div class="info">
+            <h2>Comment ça marche ?</h2>
+            <p>Ce système utilise deux types de recommandations :</p>
+            <ul>
+                <li><strong>Basées sur le contenu :</strong> Recommande des films similaires en termes de genres</li>
+                <li><strong>Collaboratives :</strong> Recommande des films basés sur les préférences d'utilisateurs similaires</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 

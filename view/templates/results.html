@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats - Système de Recommandation de Films</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Résultats pour "{{ movie }}"</h1>
+        
+        <div class="recommendations">
+            <div class="recommendation-section">
+                <h2>Recommandations basées sur le contenu</h2>
+                {% if content_recommendations %}
+                    <ul class="movie-list">
+                        {% for movie in content_recommendations %}
+                            <li>{{ movie }}</li>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <p>Aucune recommandation trouvée.</p>
+                {% endif %}
+            </div>
+            
+            {% if collaborative_recommendations %}
+            <div class="recommendation-section">
+                <h2>Recommandations personnalisées</h2>
+                <ul class="movie-list">
+                    {% for movie in collaborative_recommendations %}
+                        <li>{{ movie }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        
+        <div class="actions">
+            <a href="{{ url_for('index') }}" class="button">Nouvelle recherche</a>
+        </div>
+    </div>
+</body>
+</html> 
