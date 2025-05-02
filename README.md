@@ -19,7 +19,7 @@ Un système de recommandation de films développé en Python utilisant Flask, Pa
 
 1. Clonez le dépôt :
 ```bash
-git clone https://github.com/votre-username/movie-recommender.git
+git clone https://github.com/Nano-a/movie-recommender.git
 cd movie-recommender
 ```
 
