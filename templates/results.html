@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommandations de Films</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        .movie-list {
+            list-style: none;
+            padding: 0;
+        }
+        .movie-item {
+            background-color: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #007bff;
+        }
+        .back-button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .summary {
+            text-align: center;
+            color: #666;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recommandations de Films</h1>
+        <h2>Films similaires à "{{ recommendations.movie }}"</h2>
+        
+        <div class="summary">
+            Voici les {{ recommendations.num_recommendations }} films les plus similaires :
+        </div>
+        
+        <ul class="movie-list">
+            {% for movie in recommendations.recommendations %}
+            <li class="movie-item">{{ movie }}</li>
+            {% endfor %}
+        </ul>
+        
+        <a href="/" class="back-button">Retour à l'accueil</a>
+    </div>
+</body>
+</html> 
