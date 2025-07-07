@@ -162,8 +162,4 @@ Mail : abderrahman.ajinou@etu.u-paris.fr
 
 ---
 
-<<<<<<< HEAD
 ## 🏆 Pour toute question ou suggestion, n’hésitez pas à me contacter !
-=======
-## 🏆 Pour toute question ou suggestion, n’hésitez pas à me contacter ! 
->>>>>>> 75d3f26 (Mise à jour complète : README exhaustif, intégration design moderne, doc, structure, instructions, bonnes pratiques)
