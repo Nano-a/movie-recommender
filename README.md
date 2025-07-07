@@ -24,6 +24,18 @@ CineRecommend est un système de recommandation de films basé sur la similarit�
 
 ---
 
+## 📸 Captures d'écran
+
+<div align="center">
+  <img src="Photo%20Presentation/1.png" alt="Interface d'accueil" width="45%" />
+  <img src="Photo%20Presentation/2.png" alt="Résultats de recommandation" width="45%" /> 
+  <img src="Photo%20Presentation/3.png" alt="Visualisation des données" width="90%" style="margin-top: 20px;" />
+</div>
+
+*Interface utilisateur et résultats du système de recommandation*
+
+---
+
 ## 🗂️ Structure du projet
 
 ```
