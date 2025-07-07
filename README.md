@@ -4,6 +4,20 @@ Projet universitaire développé par **Abderrahman AJINOU** (Université Paris C
 
 ---
 
+## 🤖 Pourquoi ce projet est-il un vrai projet d'intelligence artificielle ?
+
+Ce projet n'est pas une simple application algorithmique ou une interface web : il s'agit d'un **véritable système d'intelligence artificielle appliquée** (machine learning) pour la recommandation de films. Voici pourquoi :
+
+- **Utilisation de techniques de machine learning** : le cœur du système repose sur le filtrage collaboratif (SVD) et la similarité cosinus, deux méthodes classiques de l'IA pour la recommandation personnalisée.
+- **Manipulation de données réelles** : le projet utilise des jeux de données MovieLens (notes d'utilisateurs, genres de films), construit des matrices utilisateur-film, et apprend des préférences à partir de ces données.
+- **Modélisation et évaluation** : le code inclut la séparation train/test, le calcul du RMSE (Root Mean Square Error) pour évaluer la performance du modèle, et la possibilité de générer des visualisations pour analyser les résultats.
+- **Personnalisation intelligente** : les recommandations ne sont pas statiques, mais générées dynamiquement en fonction des choix et des préférences de l'utilisateur.
+- **Respect des standards IA** : le projet suit les bonnes pratiques du machine learning (prétraitement, entraînement, évaluation, visualisation, modularité du code).
+
+> **En résumé :** CineRecommend est un projet d'intelligence artificielle (machine learning appliqué à la recommandation), et non un simple projet d'algorithmique ou d'interface. Il peut être présenté comme tel dans un contexte académique ou professionnel.
+
+---
+
 ## 🚀 Présentation
 
 CineRecommend est un système de recommandation de films basé sur la similarité cosinus et le filtrage collaboratif, développé en **Python 3.10+** avec **Flask** pour l’interface web. Il propose une interface moderne inspirée du cinéma (design Tailwind) et des outils d’analyse et de visualisation des données.
